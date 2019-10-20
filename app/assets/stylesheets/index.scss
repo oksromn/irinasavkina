@@ -1,0 +1,98 @@
+// Place all the styles related to the Index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Cuprum&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap');
+
+.navbar {
+  height: 5em;
+  padding: 0 20em;
+  font-family: 'Muli', sans-serif;
+}
+
+.navbar a {
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.3s ease;
+  color: currentColor;
+  text-decoration: none;
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+.main-image {
+  padding-top: 3em;
+  width: 100%;
+  height: auto;
+}
+
+.main-logo {
+  width: 3em;
+  height: auto;
+}
+
+.logo-link:hover {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+a {
+  color: #2E2F30;
+}
+
+.reg-btn {
+  padding: 15px 40px;
+  background-color: #ffffff;
+  color: #6858db;
+  display: inline-block;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
+  transition: 0.6s;
+}
+
+.reg-btn:hover {
+  color: #ffffff !important;
+  background-color: #6858db;
+  opacity: 1 !important;
+  -webkit-transition: all 0.6s ease !important;
+  border-bottom: none !important;
+}
+
+.company-cards {
+  padding: 5em 15%;
+  //display: inline-flex;
+}
+
+.company-cards img {
+  width: inherit;
+}
+
+.card {
+  margin: 5em 3em;
+  box-shadow: 0 0 30px 20px #c9c9c9;
+  -webkit-box-shadow: 0 0 30px -12px #c9c9c9;
+  transition: 0.5s;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 2vh;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+  box-shadow: 0 0 30px -1px #c9c9c9;
+  -webkit-box-shadow: 0 0 30px -1px #c9c9c9;
+}
+
+.card p {
+  width: inherit;
+}
+
+.plan h1 {
+  font-family: 'Comfortaa', cursive;
+}
