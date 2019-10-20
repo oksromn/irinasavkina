@@ -6,7 +6,6 @@ ruby '2.6.4'
 gem 'rails', '~> 5.2.0'
 
 gem 'haml'
-gem 'mysql2'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.14.5'
@@ -20,6 +19,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -29,6 +32,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'mysql2'
 end
 
 group :test do
