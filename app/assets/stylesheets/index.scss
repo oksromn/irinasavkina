@@ -96,3 +96,26 @@ a {
 .plan h1 {
   font-family: 'Comfortaa', cursive;
 }
+
+.accordion-text {
+  width: 70%;
+  text-align: center;
+  margin: 8em auto -2em;
+}
+
+.accordion-text h3 {
+  padding-bottom: 2em;
+}
+
+.accordion-text button {
+  color: coral;
+}
+
+.accordion-text button:hover {
+  text-decoration: none;
+  color: coral;
+}
+
+.accordion-text button:focus {
+  text-decoration: none;
+}

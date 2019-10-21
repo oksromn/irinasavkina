@@ -4,7 +4,7 @@
   = link_to 'Главная', '#main'
   = link_to 'О нас', '#about'
   = link_to 'Маркетинг', '#plans'
-  = link_to 'Регистрация', '#reg', class: 'reg-btn'
+  = link_to 'Регистрация', '#capability', class: 'reg-btn'
 
 #main.main
   = image_tag 'main.jpg', class: 'main-image'
@@ -27,7 +27,12 @@
 
   = image_tag 'catalogues.jpg', style: 'width: -webkit-fill-available;'
 
+
   = render 'layouts/market_plans'
+
+  #capability.accordion-text
+    = render 'layouts/collapse_about_reg'
+
 
   #reg{style: 'padding-top: 5em;'}
     = render 'layouts/registration'
