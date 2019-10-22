@@ -6,33 +6,11 @@
   = link_to 'Маркетинг', '#plans'
   = link_to 'Регистрация', '#capability', class: 'reg-btn'
 
-#main.main
-  = image_tag 'main.jpg', class: 'main-image'
-
-  #about.company-cards
-    = render 'layouts/about_company_cards'
-
-  .advantage{style: 'background: #053467; height: 20em;'}
-    %h2.title.text-center{style: 'padding-top: 30px; color: azure;'}
-      Преимущество компании ESSENS
-    .advantage-text.text-center{style: 'color: azure; padding: 60px 60px;'}
-      %p
-        Широкий ассортимент продукции: духи - эквиваленты мировых брендов, сходство с оригиналами 99%.
-        Продукция Aloe Vera: шампуни, кондиционеры для волос, зубные пасты, бальзамы для и после бритья,
-        дезодоранты, спрей для тела, антивозрастные крема, различные био добавки: для
-        иммунитета, для похудения,для улучшения сна и многое другое…
-      %p
-        Ассортимент постоянно пополняется
-
-
+.main
+  = image_tag 'main.jpg', class: 'main-image', id: 'main'
+  = render 'layouts/about_company_cards'
+  = render 'layouts/advantage'
   = image_tag 'catalogues.jpg', style: 'width: -webkit-fill-available;'
-
-
   = render 'layouts/market_plans'
-
-  #capability.accordion-text
-    = render 'layouts/collapse_about_reg'
-
-
-  #reg{style: 'padding-top: 5em;'}
-    = render 'layouts/registration'
+  = render 'layouts/collapse_about_reg'
+  = render 'layouts/registration'

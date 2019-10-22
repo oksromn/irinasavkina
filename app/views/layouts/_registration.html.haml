@@ -1,24 +1,22 @@
-.form-structor
-  = form_tag client_index_path, method: :post do
-    .signup
-      %h2#signup.form-title{style: 'margin-top: -70px;'}
-        %span> or
-        Регистрация
-      .form-holder
-        = text_field_tag :name, nil, placeholder: 'Имя', class: 'input'
-        = text_field_tag :email, nil, placeholder: 'Почта', class: 'input'
-        = text_field_tag :phone, nil, placeholder: 'Телефон', class: 'input'
-
-      = submit_tag 'Отправить', class: 'submit-btn'
-
-
-      -#%button.submit-btn Отправить
-    .login.slide-up
-      .center
-        %h2#login.form-title
-          %span
-          Irina Savkina
+#reg{style: 'padding-top: 5em;'}
+  .form-structor
+    = form_tag client_index_path, method: :post do
+      .signup
+        %h2#signup.form-title{style: 'margin-top: -70px;'}
+          %span> or
+          Регистрация
         .form-holder
-          %input.input{:placeholder => "Email", :type => "email"}/
-          %input.input{:placeholder => "Password", :type => "password"}/
-        %button.submit-btn Log in
+          = text_field_tag :name, nil, placeholder: 'Имя', class: 'input'
+          = text_field_tag :email, nil, placeholder: 'Почта', class: 'input'
+          = text_field_tag :phone, nil, placeholder: 'Телефон', class: 'input'
+        = submit_tag 'Отправить', class: 'submit-btn'
+
+      .login.slide-up
+        .center
+          %h2#login.form-title
+            %span
+            Irina Savkina
+          .form-holder
+            %input.input{:placeholder => "Email", :type => "email"}/
+            %input.input{:placeholder => "Password", :type => "password"}/
+          %button.submit-btn Log in
