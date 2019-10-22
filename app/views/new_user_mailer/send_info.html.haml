@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body
+    %h3
+      Имя: #{@user.name}
+      %br
+      Почта: #{@user.email}
+      %br
+      Телефон: #{@user.phone}
+    %p
+      Новый пользователь зарегистрировался на #{link_to 'irinasavkina.site', 'irinasavkina.site'}

@@ -4,7 +4,8 @@ class ClientController < ApplicationController
 
   def create
     if params[:name] && params[:email] && params[:phone]
-      Client.create(name: params[:name], email: params[:email], phone: params[:phone])
+      user = Client.create(name: params[:name], email: params[:email], phone: params[:phone])
+      NewUserMailer.send_info(user).deliver_now
     end
 
     redirect_to root_path
