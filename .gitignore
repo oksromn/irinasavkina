@@ -31,3 +31,6 @@
 /config/database.yml
 # Ignore application configuration
 /config/application.yml
+Gemfile.lock
+config/secrets.yml
+yarn.lock
