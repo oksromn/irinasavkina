@@ -1,10 +1,18 @@
 !!!
 %html
-%head
-%title Irinasavkina
-= csrf_meta_tags
-= csp_meta_tag
-= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-%body
-= yield
+  %head
+    %meta{name: 'description', content: 'Пройдя бесплатную регистрацию, вы получаете доступ в личный кабинет Essens, где вы можете совершать покупки эксклюзивной парфюмерии с большой скидкой.'}
+    %meta{name: 'robots', content: 'all'}
+    %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    = render 'layouts/yandex_metrika'
+
+    %title
+      ESSENS Эксклюзивный парфюм. Скидки на товар.
+
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  %body
+    = yield
