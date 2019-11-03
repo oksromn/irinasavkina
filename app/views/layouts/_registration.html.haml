@@ -6,9 +6,9 @@
           %span> or
           Регистрация
         .form-holder
-          = text_field_tag :name, nil, placeholder: 'Имя', class: 'input'
-          = text_field_tag :email, nil, placeholder: 'Почта', class: 'input'
-          = text_field_tag :phone, nil, placeholder: 'Телефон', class: 'input'
+          = text_field_tag :name, nil, placeholder: 'Имя', class: 'input', required: true
+          = text_field_tag :email, nil, placeholder: 'Почта', class: 'input', required: true
+          = text_field_tag :phone, nil, placeholder: 'Телефон', class: 'input', required: true
         = submit_tag 'Отправить', class: 'submit-btn'
 
       .login.slide-up
@@ -16,7 +16,3 @@
           %h2#login.form-title
             %span
             Irina Savkina
-          .form-holder
-            %input.input{:placeholder => "Email", :type => "email"}/
-            %input.input{:placeholder => "Password", :type => "password"}/
-          %button.submit-btn Log in

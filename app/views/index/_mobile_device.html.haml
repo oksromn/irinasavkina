@@ -143,14 +143,14 @@
           будь то оформление заказа, подбор идеального для вас аромата, или же введет
           тебя в мир профессионалов и вы сможете начать свой путь, как арома-стилист
 
-  #reg{style: 'padding-top: 5em;'}
+  #reg{style: 'padding-top: 5em; text-align: center;'}
     .form-structor-mobile
       = form_tag client_index_path, method: :post do
         .signup{style: 'width: 75%; top: 43%;'}
           .form-holder
-            = text_field_tag :name, nil, placeholder: 'Имя', class: 'input', style: 'font-size: 30px; height: 60px;'
-            = text_field_tag :email, nil, placeholder: 'Почта', class: 'input', style: 'font-size: 30px; height: 60px;'
-            = text_field_tag :phone, nil, placeholder: 'Телефон', class: 'input', style: 'font-size: 30px; height: 60px;'
+            = text_field_tag :name, nil, placeholder: 'Имя', class: 'input', style: 'font-size: 30px; height: 60px;', required: true
+            = text_field_tag :email, nil, placeholder: 'Почта', class: 'input', style: 'font-size: 30px; height: 60px;', required: true
+            = text_field_tag :phone, nil, placeholder: 'Телефон', class: 'input', style: 'font-size: 30px; height: 60px;', required: true
           = submit_tag 'Регистрация', class: 'submit-btn', style: 'font-size: xx-large;'
 
         .login.slide-up
@@ -158,7 +158,3 @@
             %h2#login.form-title
               %span
               Irina Savkina
-            .form-holder
-              %input.input{:placeholder => "Email", :type => "email"}/
-              %input.input{:placeholder => "Password", :type => "password"}/
-            %button.submit-btn Log in
