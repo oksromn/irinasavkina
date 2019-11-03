@@ -1,0 +1,16 @@
+%nav.navbar.fixed-top.navbar-light.bg-white
+  = link_to '#main', class: 'logo-link' do
+    = image_tag 'logo.png', class: 'main-logo'
+  = link_to 'Главная', '#main'
+  = link_to 'О нас', '#about'
+  = link_to 'Маркетинг', '#plans'
+  = link_to 'Регистрация', '#capability', class: 'reg-btn'
+
+.main
+  = image_tag 'main.jpg', class: 'main-image', id: 'main'
+  = render 'layouts/about_company_cards'
+  = render 'layouts/advantage'
+  = image_tag 'catalogues.jpg', style: 'width: -webkit-fill-available;'
+  = render 'layouts/market_plans'
+  = render 'layouts/collapse_about_reg'
+  = render 'layouts/registration'
