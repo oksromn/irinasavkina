@@ -143,17 +143,7 @@
           будь то оформление заказа, подбор идеального для вас аромата, или же введет
           тебя в мир профессионалов и вы сможете начать свой путь, как арома-стилист
 
-  -##reg{style: 'padding-top: 5em; text-align: center;'}
-  -#  = form_tag client_index_path, method: :post do
-  -#    = text_field_tag :name, nil, placeholder: 'Имя', class: 'input', style: 'font-size: 30px; height: 60px;', required: true
-  -#    %br
-  -#    = text_field_tag :email, nil, placeholder: 'Почта', class: 'input', style: 'font-size: 30px; height: 60px;', required: true
-  -#    %br
-  -#    = text_field_tag :phone, nil, placeholder: 'Телефон', class: 'input', style: 'font-size: 30px; height: 60px;', required: true
-  -#    %br
-  -#    = submit_tag 'Регистрация', class: 'submit-btn', style: 'font-size: xx-large;'
-
-  .mobile-form
+  .mobile-form#reg
     .login
       %h1 Регистрация
       = form_tag client_index_path, method: :post do
