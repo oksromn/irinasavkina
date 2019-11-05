@@ -4,9 +4,9 @@
   = link_to 'Главная', '#main'
   = link_to 'О нас', '#about'
   = link_to 'Маркетинг', '#plans'
-  = link_to 'Регистрация', '#capability', class: 'reg-btn'
+  = link_to 'Регистрация', '#reg', class: 'reg-btn'
 
-.main
+.main#main
   = image_tag 'main.jpg', style: 'width: 100%; padding-top: 7em;'
 
   #about.company-cards
@@ -37,6 +37,18 @@
           в Европе, была создана в Чешской Республике осенью 2011 года. Фирма основана на
           сотрудничестве нескольких специалистов в области сетевого маркетинга и ведущих
           специалистов в области разработки и производства косметических средств.
+
+  .mob-form#reg
+    %h1 Регистрация
+    = form_tag client_index_path, method: :post do
+      .field
+        = text_field_tag :name, nil, placeholder: 'Имя', required: true
+      .field
+        = text_field_tag :email, nil, placeholder: 'Почта', required: true
+      .field
+        = text_field_tag :phone, nil, placeholder: 'Телефон', required: true
+      .submit-button
+        = submit_tag 'Отправить', class: 'submit'
 
 
   .advantage{style: 'background: #053467; height: auto;'}
@@ -96,8 +108,7 @@
           Double Silver Manager (DSM) получает 2% от оборота своих линий SM до следующего DSM или Gold Manager (GM) и выше.
 
   #capability.accordion-text
-  %h3{ style: 'font-size: xx-large; text-align: center;' } Возможности Essens после регистрации
-
+  %h3{ style: 'font-size: 4em; text-align: center; padding-bottom: 1em;' } Возможности Essens после регистрации
   #accordionExample.accordion
     .carda
       #headingFour.card-header
@@ -143,14 +154,3 @@
           будь то оформление заказа, подбор идеального для вас аромата, или же введет
           тебя в мир профессионалов и вы сможете начать свой путь, как арома-стилист
 
-  .mob-form#reg
-    %h1 Регистрация
-    = form_tag client_index_path, method: :post do
-      .field
-        = text_field_tag :name, nil, placeholder: 'Имя', required: true
-      .field
-        = text_field_tag :email, nil, placeholder: 'Почта', required: true
-      .field
-        = text_field_tag :phone, nil, placeholder: 'Телефон', required: true
-      .submit-button
-        = submit_tag 'Отправить', class: 'submit'
