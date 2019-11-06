@@ -38,6 +38,54 @@
           сотрудничестве нескольких специалистов в области сетевого маркетинга и ведущих
           специалистов в области разработки и производства косметических средств.
 
+  #capability.accordion-text
+    %h3{ style: 'font-size: 4em; text-align: center; padding-bottom: 1em;' } Возможности Essens после регистрации
+    #accordionExample.accordion
+      .carda
+        #headingFour.card-header
+          %h2.mb-0{style: 'text-align: center;'}
+            %button.btn.btn-link{"aria-controls" => "collapseFour", "aria-expanded" => "false", "data-target" => "#collapseFour", "data-toggle" => "collapse", :type => "button", style: 'font-size: -webkit-xxx-large;'}
+              Престиж и уникальная продукция
+        #collapseFour.show{"aria-labelledby" => "headingFour", "data-parent" => "#accordionExample"}
+          .card-body{style: 'text-align: center; font-size: xx-large;'}
+            Быть представителем компании Essens - это большая честь и гордость. Это
+            европейское качество и экологичный подход к жизни. Натуральня косметика с
+            алоэ вера, безопасные моющие средства для чистого дома. Но это еще не все
+            линейка товаров компании Essens постоянно расширяется, а товары Essens Beauty -
+            выбираю звезды отечественной и зарубежной эстрады, как свой любимый товар в косметичке.
+      .carda
+        #headingOne.card-header
+          %h2.mb-0{style: 'text-align: center;'}
+            %button.btn.btn-link.collapsed{"aria-controls" => "collapseOne", "aria-expanded" => "false", "data-target" => "#collapseOne", "data-toggle" => "collapse", :type => "button", style: 'font-size: -webkit-xxx-large;'}
+              Скидка от -40% на весь товар
+        #collapseOne.collapse{"aria-labelledby" => "headingOne", "data-parent" => "#accordionExample"}
+          .card-body{style: 'text-align: center; font-size: xx-large;'}
+            Пройдя бесплатную регистрацию и предоставив ваш документ, вы получаете доступ
+            в ваш личный кабинет Essens, где вы можете совершать покупки в любое время и при
+            этом с большой скидкой
+      .carda
+        #headingTwo.card-header
+          %h2.mb-0{style: 'text-align: center;'}
+            %button.btn.btn-link.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-target" => "#collapseTwo", "data-toggle" => "collapse", :type => "button", style: 'font-size: -webkit-xxx-large;'}
+              Стань экспертом в сфере ароматов
+        #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordionExample"}
+          .card-body{style: 'text-align: center; font-size: xx-large;'}
+            Приобретя папку с ароматами и изучив материалы, которые вам предоставляет
+            компания - вы начнете отлично разбираться в области парфюмерии. Это может
+            остаться вашим хобби или же перерасти в профессию. Решать вам!
+      .carda
+        #headingThree.card-header
+          %h2.mb-0{style: 'text-align: center;'}
+            %button.btn.btn-link.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-target" => "#collapseThree", "data-toggle" => "collapse", :type => "button", style: 'font-size: -webkit-xxx-large;'}
+              Познакомься с твоим личный куратором (коучем)
+        #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordionExample"}
+          .card-body{style: 'text-align: center; font-size: xx-large;'}
+            У каждого нового человека, кто зарегистрировался в Essens есть свой коуч,
+            это наставник - человек, который поможет разобраться с любым вопросом -
+            будь то оформление заказа, подбор идеального для вас аромата, или же введет
+            тебя в мир профессионалов и вы сможете начать свой путь, как арома-стилист
+        %br
+          %br
   .mob-form#reg
     %h1 Регистрация
     = form_tag client_index_path, method: :post do
@@ -106,51 +154,3 @@
           структуры в глубину и поддержку для достижения Silver Manager (SM) и выше. Для выплаты комиссионного вознаграждения
           согласно 4-му маркетинговому плану необходимо, чтобы ежемесячный личный оборот, в данном месяце составлял 100 баллов.
           Double Silver Manager (DSM) получает 2% от оборота своих линий SM до следующего DSM или Gold Manager (GM) и выше.
-
-  #capability.accordion-text
-  %h3{ style: 'font-size: 4em; text-align: center; padding-bottom: 1em;' } Возможности Essens после регистрации
-  #accordionExample.accordion
-    .carda
-      #headingFour.card-header
-        %h2.mb-0{style: 'text-align: center;'}
-          %button.btn.btn-link{"aria-controls" => "collapseFour", "aria-expanded" => "false", "data-target" => "#collapseFour", "data-toggle" => "collapse", :type => "button", style: 'font-size: -webkit-xxx-large;'}
-            Престиж и уникальная продукция
-      #collapseFour.show{"aria-labelledby" => "headingFour", "data-parent" => "#accordionExample"}
-        .card-body{style: 'text-align: center; font-size: xx-large;'}
-          Быть представителем компании Essens - это большая честь и гордость. Это
-          европейское качество и экологичный подход к жизни. Натуральня косметика с
-          алоэ вера, безопасные моющие средства для чистого дома. Но это еще не все
-          линейка товаров компании Essens постоянно расширяется, а товары Essens Beauty -
-          выбираю звезды отечественной и зарубежной эстрады, как свой любимый товар в косметичке.
-    .carda
-      #headingOne.card-header
-        %h2.mb-0{style: 'text-align: center;'}
-          %button.btn.btn-link.collapsed{"aria-controls" => "collapseOne", "aria-expanded" => "false", "data-target" => "#collapseOne", "data-toggle" => "collapse", :type => "button", style: 'font-size: -webkit-xxx-large;'}
-            Скидка от -40% на весь товар
-      #collapseOne.collapse{"aria-labelledby" => "headingOne", "data-parent" => "#accordionExample"}
-        .card-body{style: 'text-align: center; font-size: xx-large;'}
-          Пройдя бесплатную регистрацию и предоставив ваш документ, вы получаете доступ
-          в ваш личный кабинет Essens, где вы можете совершать покупки в любое время и при
-          этом с большой скидкой
-    .carda
-      #headingTwo.card-header
-        %h2.mb-0{style: 'text-align: center;'}
-          %button.btn.btn-link.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-target" => "#collapseTwo", "data-toggle" => "collapse", :type => "button", style: 'font-size: -webkit-xxx-large;'}
-            Стань экспертом в сфере ароматов
-      #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordionExample"}
-        .card-body{style: 'text-align: center; font-size: xx-large;'}
-          Приобретя папку с ароматами и изучив материалы, которые вам предоставляет
-          компания - вы начнете отлично разбираться в области парфюмерии. Это может
-          остаться вашим хобби или же перерасти в профессию. Решать вам!
-    .carda
-      #headingThree.card-header
-        %h2.mb-0{style: 'text-align: center;'}
-          %button.btn.btn-link.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-target" => "#collapseThree", "data-toggle" => "collapse", :type => "button", style: 'font-size: -webkit-xxx-large;'}
-            Познакомься с твоим личный куратором (коучем)
-      #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordionExample"}
-        .card-body{style: 'text-align: center; font-size: xx-large;'}
-          У каждого нового человека, кто зарегистрировался в Essens есть свой коуч,
-          это наставник - человек, который поможет разобраться с любым вопросом -
-          будь то оформление заказа, подбор идеального для вас аромата, или же введет
-          тебя в мир профессионалов и вы сможете начать свой путь, как арома-стилист
-
