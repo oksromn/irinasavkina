@@ -10,6 +10,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.14.5'
 gem "figaro"
+gem 'geocoder'
 
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
